@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.catButt {
+    background-color: #00a2aa;
+    width: 130px;
+    height: 130px;
+    color: #ffffffb1;
+    text-align: center;
+    border: solid rgb(33, 118, 209);
+    border-width: 2px;
+    font-size: 100%;
+    cursor: pointer;
+}
