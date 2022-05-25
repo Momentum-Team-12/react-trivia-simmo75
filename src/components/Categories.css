@@ -11,10 +11,13 @@
     background-color: #00a2aa;
     width: 130px;
     height: 130px;
-    color: #ffffffb1;
+    color: #000000b1;
     text-align: center;
     border: solid rgb(33, 118, 209);
     border-width: 2px;
+    font-family: aileron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 100%;
     cursor: pointer;
 }
