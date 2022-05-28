@@ -1,6 +1,7 @@
-import "./Categories.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Question from './Question';
+// import "./Categories.css";
 
 function Categories() {
   const [catObjects, setCatObjects] = useState([]);
@@ -29,8 +30,8 @@ function Categories() {
     <>
       {!categorySelected ? (
         <>
+          <h2>Pick a Category!</h2>
           <div>
-            <h2>Pick a Category!</h2>
             {catObjects.map((catObject, index) => {
               return (
                 <div key={index}>
@@ -45,21 +46,19 @@ function Categories() {
       ) : (
         <>
           <div>
-            <p>
-              {questions &&
-                questions.map((questions, index) => {
-                  return (
-                    <div key={index}>
-                      <p>{questions.question}</p>
-                      <h3>Pick an Answer!</h3>
-                      <button>{questions.correct_answer}</button>
-                      {questions.incorrect_answers.map((answer, index) => {
-                        return <button key={index}>{answer}</button>;
-                      })}
-                    </div>
-                  );
-                })}
-            </p>
+            {questions &&
+              questions.map((question, index) => {
+                return (
+                  <Question 
+                    questionText={question.question}
+                    correctAnswer={question.correct_answer}
+                    key={index}
+                    incorrectAnswers={
+                      question.incorrect_answers
+                    }
+                  />
+                );
+              })}
           </div>
         </>
       )}

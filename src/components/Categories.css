@@ -1,13 +1,13 @@
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-}
+} */
 
-.catButt {
+/* .catButt {
     background-color: #00a2aa;
     width: 130px;
     height: 130px;
@@ -20,4 +20,4 @@
     font-style: normal;
     font-size: 100%;
     cursor: pointer;
-}
+} */

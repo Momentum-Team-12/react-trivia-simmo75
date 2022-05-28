@@ -1,4 +1,47 @@
-.text {
+body {
+    background-color: rgba(9, 62, 91, 0.827);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: aileron, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+}
+
+    button {
+        background-color: #97dcff;
+        width: 40%;
+        height: 20%;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        border: solid rgb(0, 0, 0);
+        border-width: 2px;
+        font-family: aileron, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 100%;
+        cursor: pointer;
+    }
+
+
+
+/* .container { */
+
+/* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+/* background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-style: normal; */
+/* } */
+
+/* .text {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -7,4 +50,5 @@
     font-family: aileron, sans-serif;
     font-weight: 700;
     font-style: normal;
-}
+} */
+
