@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Question from './Question';
-// import "./Categories.css";
+import Question from "./Question";
 
 function Categories() {
   const [catObjects, setCatObjects] = useState([]);
@@ -46,16 +45,16 @@ function Categories() {
       ) : (
         <>
           <div>
+            && = is a conditional check, to see if true, and making sure no
+            other action happens.
             {questions &&
               questions.map((question, index) => {
                 return (
-                  <Question 
+                  <Question
                     questionText={question.question}
                     correctAnswer={question.correct_answer}
                     key={index}
-                    incorrectAnswers={
-                      question.incorrect_answers
-                    }
+                    incorrectAnswers={question.incorrect_answers}
                   />
                 );
               })}
