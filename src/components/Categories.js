@@ -6,6 +6,7 @@ function Categories() {
   const [catObjects, setCatObjects] = useState([]);
   const [questions, setQuestions] = useState([]);
   const [categorySelected, setCategorySelected] = useState(false);
+  
 
   useEffect(() => {
     axios.get(`https://opentdb.com/api_category.php`).then((res) => {
@@ -29,7 +30,7 @@ function Categories() {
     <>
       {!categorySelected ? (
         <>
-          <h2>Pick a Category!</h2>
+          <h2>Pick a Category?</h2>
           <div>
             {catObjects.map((catObject, index) => {
               return (
@@ -45,10 +46,9 @@ function Categories() {
       ) : (
         <>
           <div>
-            && = is a conditional check, to see if true, and making sure no
-            other action happens.
             {questions &&
               questions.map((question, index) => {
+    
                 return (
                   <Question
                     questionText={question.question}

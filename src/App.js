@@ -4,9 +4,8 @@ import Categories from "./Components/Categories";
 function App() {
   return (
     <div>
-      <h1>Big Lou's Trivia</h1>
+      <h1>Let's Play Trivia!</h1>
       
-      <h2>Let's Play!</h2>
 
       <Categories />
     </div>
